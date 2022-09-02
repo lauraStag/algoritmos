@@ -119,10 +119,12 @@ public class AlgoritmosOrdenamiento {
                 arrDerecha[posDer++] = arreglo[i];
             }
         }
+        arrIzquierda = Arrays.copyOf(arrIzquierda, posIzq);
+        arrDerecha = Arrays.copyOf(arrDerecha, posDer);
         
         //llamo de nuevo el metodo para los 2 nuevos arreglos
-        arrIzquierda = mergeQuick(arrIzquierda);
-        arrDerecha = mergeQuick(arrDerecha);
+        arrIzquierda = arrIzquierda.length>0?mergeQuick(arrIzquierda):arrIzquierda;
+        arrDerecha = arrDerecha.length>0?mergeQuick(arrDerecha):arrDerecha;
         
         //inserto todos los valores ordenados en el arreglo a devolver
         for(int i=0; i < arrIzquierda.length; i++){

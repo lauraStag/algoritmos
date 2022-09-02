@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.OrdenamientoQuickTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.049 s <<< FAILURE! - in test.OrdenamientoQuickTest
-ordenar20  Time elapsed: 0.035 s  <<< ERROR!
-java.lang.StackOverflowError
-
-ordenar7  Time elapsed: 0.005 s  <<< ERROR!
-java.lang.StackOverflowError
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in test.OrdenamientoQuickTest

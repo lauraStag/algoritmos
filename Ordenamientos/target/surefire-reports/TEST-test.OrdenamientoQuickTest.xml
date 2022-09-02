@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.OrdenamientoQuickTest" time="0.049" tests="3" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.OrdenamientoQuickTest" time="0.041" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\galad\AppData\Local\Temp\surefire1206089490758390498\surefirebooter2501148771540911300.jar C:\Users\galad\AppData\Local\Temp\surefire1206089490758390498 2022-09-02T17-47-39_980-jvmRun1 surefire3713644250387671556tmp surefire_010997029353701309976tmp"/>
+    <property name="sun.java.command" value="C:\Users\galad\AppData\Local\Temp\surefire14506457805878963742\surefirebooter8259447230422332838.jar C:\Users\galad\AppData\Local\Temp\surefire14506457805878963742 2022-09-02T20-59-37_579-jvmRun1 surefire11068143442726295419tmp surefire_010997139187371210241tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="test.OrdenamientoQuickTest"/>
     <property name="surefire.test.class.path" value="C:\workspace\Algoritmos\Ordenamientos\target\test-classes;C:\workspace\Algoritmos\Ordenamientos\target\classes;C:\Users\galad\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\galad\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\galad\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\galad\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\galad\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\galad\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\galad\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\galad\AppData\Local\Temp\surefire1206089490758390498\surefirebooter2501148771540911300.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\galad\AppData\Local\Temp\surefire14506457805878963742\surefirebooter8259447230422332838.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -52,24 +52,14 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.language.format" value="es"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\galad\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\galad\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="ordenar20" classname="test.OrdenamientoQuickTest" time="0.035">
-    <error type="java.lang.StackOverflowError">java.lang.StackOverflowError
-</error>
-    <system-out><![CDATA[Datos originales: 
-150  94  41  2  80  7  3  58  18  900  64  1  115  79  205  36  500  14  88  3  ]]></system-out>
-  </testcase>
-  <testcase name="ordenarVacio" classname="test.OrdenamientoQuickTest" time="0"/>
-  <testcase name="ordenar7" classname="test.OrdenamientoQuickTest" time="0.005">
-    <error type="java.lang.StackOverflowError">java.lang.StackOverflowError
-</error>
-    <system-out><![CDATA[Datos originales: 
-50  2  23  110  98  1  40  ]]></system-out>
-  </testcase>
+  <testcase name="ordenar20" classname="test.OrdenamientoQuickTest" time="0.029"/>
+  <testcase name="ordenarVacio" classname="test.OrdenamientoQuickTest" time="0.001"/>
+  <testcase name="ordenar7" classname="test.OrdenamientoQuickTest" time="0.002"/>
 </testsuite>
