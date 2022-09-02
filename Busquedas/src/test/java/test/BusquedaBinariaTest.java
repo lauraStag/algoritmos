@@ -52,6 +52,6 @@ public class BusquedaBinariaTest {
     
     @Test
     public void buscarVacio(){
-        Busquedas.busquedaBinaria(new int[0], 10);
+        Busquedas.busquedaBinaria(new int[]{}, 10);
     }
 }
