@@ -1,12 +1,11 @@
 package test;
 
 import domain.Busquedas;
-import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 
 /**
  *
- * @author galad
+ * @author Laura Stagnaro
  */
 public class BusquedaBinariaTest {
 
