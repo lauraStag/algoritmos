@@ -76,4 +76,63 @@ public class AlgoritmosOrdenamiento {
         
         return arregloOrdenado;
     }
+    
+    /**
+     * Se toma el primer valor del arreglo y se compara con todos los demás,
+     * colocando los menores en un arreglo-izquierda y los mayores en un arreglo-derecha.
+     * De forma recursiva se vuelve a ejecutar el método para cada uno de esos arreglos.
+     * Se unen los arreglos ya ordenados.
+     * 
+     * @param arreglo a ser ordenado
+     * @return 
+     */
+    public static int[] mergeQuick(int[] arreglo){
+        
+        //si el arreglo está vacio, no tiene sentido seguir
+        if(arreglo.length == 0){
+            System.out.println("El arreglo está vacío.");
+            return arreglo;
+        }
+        
+        //si tiene un solo elemento, ya está ordenado
+        if(arreglo.length == 1){
+            return arreglo;
+        }
+        
+        //creo el arreglo que se devolvera ordenado
+        int arregloOrdenado[] = new int[arreglo.length];
+        int posOrd = 0;
+        int pivot = 0;
+        
+        //creo los arreglos auxiliares
+        int arrIzquierda[] = new int[arreglo.length];
+        int posIzq = 0;
+        int arrDerecha[] = new int[arreglo.length];
+        int posDer = 0;
+        
+        for(int i=1; i < arreglo.length; i++){
+            if(arreglo[pivot] > arreglo[i]){
+                //agrego el dato al arreglo de la izquierda
+                arrIzquierda[posIzq++] = arreglo[i];
+            }else{
+                //agrego el dato al arreglo de la derecha
+                arrDerecha[posDer++] = arreglo[i];
+            }
+        }
+        
+        //llamo de nuevo el metodo para los 2 nuevos arreglos
+        arrIzquierda = mergeQuick(arrIzquierda);
+        arrDerecha = mergeQuick(arrDerecha);
+        
+        //inserto todos los valores ordenados en el arreglo a devolver
+        for(int i=0; i < arrIzquierda.length; i++){
+            arregloOrdenado[posOrd++] = arrIzquierda[i];
+        }
+        arregloOrdenado[posOrd++] = arreglo[pivot];
+        for(int i=0; i < arrDerecha.length; i++){
+            arregloOrdenado[posOrd++] = arrDerecha[i];
+        }
+        
+        return arregloOrdenado;
+    }
 }
