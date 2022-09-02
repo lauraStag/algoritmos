@@ -137,4 +137,34 @@ public class AlgoritmosOrdenamiento {
         
         return arregloOrdenado;
     }
+    
+    /**
+     * Bubble Sort ordena comparando los datos de a pares, e intercambiando los valores
+     * si el izquierdo es mayor que el derecho, enviando el mayor valor al final del arreglo en cada pasada.
+     * 
+     * @param arreglo a ser ordenado
+     * @return 
+     */
+    public static int[] bubbleSort(int[] arreglo){
+        
+        if(arreglo.length==0){
+            System.out.println("El arreglo se encuentra vacío");
+            return arreglo;
+        }
+        
+        for(int i=0; i < arreglo.length; i++){
+            for(int j=0; j < arreglo.length-i-1; j++){
+                if(arreglo[j] > arreglo[j+1]){
+                    int temp = arreglo[j];
+                    arreglo[j] = arreglo[j+1];
+                    arreglo[j+1] = temp;
+                }
+            }
+        }
+        
+        return arreglo;
+        
+    }
+    
+    
 }
